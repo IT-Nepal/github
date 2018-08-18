@@ -1,0 +1,97 @@
+$ git --version //to find the git version
+$ git config --global user.name "Bucky Roberts"//change the configuration of file, 
+   change setting for these user
+$ git config --global user.email "bucky123@gmail.com" //change email
+$ git config --list //show list of change configuration
+$ git config user.email 
+
+$ git help
+$ git help commit
+ 
+$ git init //first go to desire directory then type these command; git will track what ever the changes made in these folder
+
+$ git add.//add all of the change that we make to our project, . period means all file
+
+$ git commit -m "This is our frist commit" //commit, save these point in time
+
+$ git log // show our commit
+ 
+$ git log --author="Bucky" //only show the commit of bucky
+
+$ git status //show untrack file, which is not commit
+
+$ git add second.txt //add the file and ready to commit
+
+//working copy > staging area > repository
+// when ever we create file it is in local computer; working copy
+// when ever we add it (git add second.txt) it goes to the staging area
+// when ever we commit it goes to the repository
+
+//modify file, then staging and then commit
+//nothing to commit, working directory clean; means working and repository file are same
+
+$ git diff //show the change file , uncommit file; show difference between working copy and repository
+
+//change two file and type $git diff
+
+$ git diff --staged //differences between staging and repository
+
+$ git rm hello.txt // remove hello.txt file
+$ git commit -m "This is deleted"
+
+//while you rename a file; 
+$ git add new.txt
+$ git rm old.txt
+$ git status //it will rename file
+$ git commit -m "rename file"
+
+$ git mv old.txt new.txt //rename file
+$ git status
+$ git mv old.txt dir/new.txt //rename file
+
+$ git commit -am "short cut" //staging and repository work at a time.
+
+
+$ git checkout -- index.html //undo file; take back repo file to the working copy.
+
+$ git add.
+$ git reset HEAD profile.html //change staging to unstaged, back to working copy
+
+////////get old version, get changed file, old file before modify ////////////
+
+//change content of file
+$ git commit -am "staging and commit file"
+$ git log
+// copy commit id(below the "message")
+$ git checkout (commit id) -- index.html
+
+/////////////////Create Repository////////////////////////////////////
+1. git remote add (githubreponame) https://github.com/buckyrobots/tutorials.git
+2. git remote //show repository name variable
+3. git push -u githubrepository master //adding file to public repo, -u means take all
+
+//////////////////////////////////////////////////////////////
+////////////////////branch/////////////////////////////////////
+
+-branch is a copy of main repository.
+-make new branches which will be the copy of master branch
+
+
+- pull request; you make public to change your project
+  here conversation means conversation to new user about changes made by them
+- Merge pull request means accepts the changes
+- Close pull request means didn;t accepts the changes
+- Raw ; copy code from the raw.
+- blame; show who modified it.
+- history ; history of one file
+- watch; following, whenever change occured in project it notify me, give update
+- star; save or bookmark
+- fork; make new branch or copy of these project
+
+- Issues; assign person to permorm specific task
+- Issues -> new Issues - > title and body
+
+-Wiki; area which provied more information about our project
+
+-Orginaziation; click + button of top -> new organization
+ it allows to split task
